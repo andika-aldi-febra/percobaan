@@ -29,7 +29,7 @@ public class Step5 {
         } else {
             System.out.println("Tidak dapat diskon.");
             System.out.printf("Total belanja: Rp.%,d%n", totalBelanja);
-        };
+        }
 
         input.close();
 
