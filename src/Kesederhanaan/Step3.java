@@ -17,14 +17,21 @@ public class Step3 {
         System.out.print("Masukkan angka ketiga: ");
         int angka3 = input.nextInt();
 
-        if (angka1 > angka2 && angka1 > angka3) {
-            System.out.println("Angka terbesar adalah: " + angka1);
-        } else if (angka2 > angka1 && angka2 > angka3) {
-            System.out.println("Angka terbesar adalah: " + angka2);
-        } else if (angka3 > angka1 && angka3 > angka2) {
-            System.out.println("Angka terbesar adalah: " + angka3);
+        // Cek apakah semua sama
+        if (angka1 == angka2 && angka2 == angka3) {
+            System.out.println("Ketiga angka sama.");
         } else {
-            System.out.println("Angka pertama, kedua dann ketiga sama.");
+            int terbesar = angka1;
+
+            if (angka2 > terbesar) {
+                terbesar = angka2;
+            }
+
+            if (angka3 > terbesar) {
+                terbesar = angka3;
+            }
+
+            System.out.println("Angka terbesar adalah: " + terbesar);
         }
 
         input.close();
