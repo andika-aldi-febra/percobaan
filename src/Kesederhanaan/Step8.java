@@ -11,8 +11,7 @@ public class Step8 {
         System.out.print("Masukkan angka: ");
         int angka = input.nextInt();
 
-        int angkaPositif = Math.abs(angka);
-        int jumlahDigit = String.valueOf(angkaPositif).length();
+        int jumlahDigit = String.valueOf(Math.abs(angka)).length();
 
         System.out.println("Jumlah digit: " + jumlahDigit);
 
