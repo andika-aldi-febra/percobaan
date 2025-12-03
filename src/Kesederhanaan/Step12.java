@@ -16,7 +16,7 @@ public class Step12 {
             return;
         }
 
-        long hasil = 1;
+        long hasil = 1L;
 
         /*
         for (int i = angka; i >= 1; i--) {
